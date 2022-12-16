@@ -1,0 +1,267 @@
+
+
+@font-face {
+    font-family: 'squada';
+    src: url(Squada_One/SquadaOne-Regular.ttf);
+    font-style: normal;
+
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+h1, h2, h3, h4 {
+    font-family: squada;
+}
+
+.navbar-img-icon{
+    width: 85px;
+    border-radius: 100px;
+    margin: 0 20px;
+    position: relative;
+    top: 20px;
+}
+
+.navbar-main-title{
+    position: relative;
+    top: 10px;
+    font-family: squada;
+    font-size: 35px;
+}
+
+.presentation-container{
+    width: 100%;
+    height: 70vh;
+    background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.7)), url("img/deskComputersOpenSign.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+@media screen and (max-width: 768px) {
+    .presentation-container{
+        width: 100%;
+        height: 70vh;
+        background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.7)), url("img/deskComputersOpenSign.jpg");
+        background-size: cover;
+        background-position: center;
+        background-attachment: scroll;
+    }
+}
+
+.home-pta-h1{
+    font-family: squada;
+    font-size: 50px;
+}
+
+.home-about-us-h2{
+    font-family: squada, Arial, sans-serif;
+    letter-spacing: 2px;
+}
+
+.home-grid-container{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    margin: 100px 1.5%;
+    gap: 1%;
+    justify-content: center;
+}
+
+.home-grid-item{
+    text-align: center;
+    padding: 3%;
+    background-color: whitesmoke;
+}
+
+@media only screen and (max-width: 425px) {
+    .home-grid-container{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+}
+
+
+/* social icons here */
+.home-social-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icons-header{
+    letter-spacing: 5px;
+}
+
+.home-social-icon-item{
+    margin:44px;
+    
+}
+
+@media screen and (max-width: 425px) {
+    .home-social-icon-item{
+        margin: 24px;
+    }
+}
+
+/* social icons end here */
+
+/* after social media icon pictures grid start here */
+.home-grid-photo-section-container{
+    display: grid;
+    grid-template-columns: 24.8% 24.8% 24.8% 24.8%;
+    gap: 5px;
+    width: 100%;
+}
+
+.home-grid-photo-section-item{
+    width: 100%;   
+}
+
+@media screen and (max-width: 425px) {
+    .home-grid-photo-section-container{
+        display: grid;
+        grid-template-columns: auto;
+    }
+}
+
+/* picture grid end here */
+
+
+/* our service section */
+.our-service-grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    gap: 10px;
+    margin: 3%;
+}
+
+.our-service-grid-item-h3-p{
+    margin: 3%;
+    padding: 3%;
+    text-align: center;
+}
+
+@media screen and (max-width: 425px) {
+    .our-service-grid-container{
+        display: grid;
+        grid-template-columns: auto;
+        justify-items: center;
+        text-align: center;
+    }
+
+    .viremos-el-container{
+        display: flex;
+        flex-direction: column-reverse;
+        
+    }
+}
+
+/*end of our service section */
+
+/* contact us */
+.contact-us-background-img{
+    width: 100%;
+    height: 30vh;
+    background-color: aqua;
+    margin: 65px 0;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.7)), url(img/nice\ blue\ desk\ setup.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+@media screen and (max-width: 768px) {
+    .contact-us-background-img{
+        width: 100%;
+        height: 30vh;
+        background-color: aqua;
+        margin: 65px 0;
+        background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.7)), url(img/nice\ blue\ desk\ setup.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: scroll;
+    }
+}
+
+.contact-us-form-information-main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 10%;
+}
+
+.contact-us-section-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-us-section-form input{
+    margin-bottom: 25px;
+}
+
+.contact-us-send-button{
+    margin-bottom: 25px;
+    height: 55px;
+    font-family: squada;
+    letter-spacing: 5px;
+    font-size: 20px;
+    background-color: white;
+    transition: 1s;
+}
+
+.contact-us-send-button:hover{
+    background-color: lightgrey;
+}
+
+@media screen and (max-width: 768px) {
+    .contact-us-send-button{
+        margin-bottom: 55px;
+        height: 55px;
+        font-family: squada;
+        letter-spacing: 5px;
+        font-size: 20px;
+        background-color: lightgrey;
+        /* transition: 1s; */
+    }
+    
+    /* .contact-us-send-button:hover{
+        background-color: lightgrey;
+    } */
+}
+
+.contact-us-text-information{
+    display: flex;
+    flex-direction: column;
+    margin: 0 10%;
+}
+
+@media screen and (max-width: 768px) {
+    .contact-us-form-information-main{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0 10%;
+    }
+}
+
+/*end of contact us */
+
+/* google maps section */
+.google-maps-section{
+    width: 100%;
+    height: 40vh;
+    background-color: rgb(234, 233, 233);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*end of google maps section */
+
+
